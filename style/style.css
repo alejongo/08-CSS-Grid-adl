@@ -1,3 +1,37 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 2fr 9fr;
+  gap: 0.8rem;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: aqua;
+  height: 50px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: bisque;
+  height: 85vh;
+}
+
+.main {
+  grid-area: main;
+  background-color: bisque;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: aqua;
+  height: 5vh;
+}
+
 /*Fonts Classes*/
 .poppins-regular {
   font-family: "Poppins", sans-serif;
